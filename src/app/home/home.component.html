@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <app-name-card></app-name-card>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <app-electric-usage-card (selectRow)=outputTable($event)></app-electric-usage-card>
+      </div>
+      <div class="col-md-6">
+        <app-pass-service></app-pass-service>
+        <app-device-chart [getVal]="chartDataFromOutput"></app-device-chart>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+          <th>Device Name</th>
+          <th>Usage(Watt)</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="cursor: pointer;" *ngFor="let iotList of table" (click)="setChart(iotList)">
+          <td>{{iotList.deviceName}}</td>
+          <td>{{iotList.usage}}</td>
+          <td>{{iotList.status}}</td>
+        </tr>
+      </tbody>
+</table>
